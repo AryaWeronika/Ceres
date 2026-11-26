@@ -1,0 +1,494 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+.ceres-sheet {
+    font-family: 'Courier Prime', 'Courier New', monospace;
+    color: #111;
+    padding: 25px; 
+    text-transform: uppercase;
+    background-image: url('../assets/karta.png');
+    background-size: 100% 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff; 
+}
+
+    .ceres-sheet .window-content {
+        background-image: url("../assets/karta-tlo.png");
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 30px;
+    }
+
+
+    .ceres-sheet form {
+        background: #ffffff; 
+        padding: 15px;
+        height: 100%;
+        overflow-y: auto; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    }
+
+
+.app.window-app.ceres-sheet .window-content {
+    background: transparent;
+}
+
+
+.ceres-sheet input[type="text"],
+.ceres-sheet input[type="number"],
+.ceres-sheet textarea {
+    background: transparent !important;
+    border: none;
+    border-bottom: 1px dotted #111;
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+    color: #000;
+}
+.ceres-logo {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0 0 15px 0;
+    border-bottom: 2px solid #000;
+}
+
+.ceres-divider {
+    border: 0;
+    border-top: 2px dashed #000;
+    margin: 15px 0;
+}
+
+.ceres-section h2, .ceres-section h3 {
+    font-weight: bold;
+    margin: 8px 0;
+    letter-spacing: 1px;
+}
+
+.ceres-sheet input[type="text"],
+.ceres-sheet input[type="number"],
+.ceres-sheet textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dotted #111;
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+    color: #000;
+    border-radius: 0;
+}
+
+    .ceres-sheet input:focus,
+    .ceres-sheet textarea:focus {
+        outline: none;
+        background: rgba(0,0,0,0.03);
+    }
+
+.ceres-sheet textarea {
+    width: 100%;
+    resize: vertical;
+    line-height: 1.6;
+    background-image: linear-gradient(to bottom, transparent 95%, #999 100%);
+    background-size: 100% 24px;
+}
+
+/* Wiersze i układy */
+.ceres-sheet .row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.ceres-sheet .inline-fields label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.ceres-sheet .inline-fields input {
+    flex: 1;
+}
+
+.ceres-sheet .short-input {
+    width: 70px !important;
+    text-align: center;
+    flex: none !important;
+}
+
+.ceres-sheet .attribute-row {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    margin-bottom: 4px;
+    gap: 30px; 
+}
+
+.ceres-sheet .attr-name {
+    flex: 1;
+    font-weight: bold;
+}
+.ceres-sheet .section-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.ceres-sheet .grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.ceres-sheet .center-text {
+    text-align: center;
+}
+
+.ceres-sheet .margin-top {
+    margin-top: 10px;
+}
+
+.ceres-sheet .rollable {
+    cursor: pointer;
+}
+
+    .ceres-sheet .rollable:hover {
+        color: #555;
+        text-shadow: 0 0 2px rgba(0,0,0,0.2);
+    }
+
+
+.ceres-sheet input[type="text"],
+.ceres-sheet input[type="number"],
+.ceres-sheet select,
+.ceres-sheet textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dotted #111;
+    font-family: 'Courier Prime', monospace;
+    font-size: 14px;
+    color: #000;
+    border-radius: 0;
+}
+
+.ceres-sheet .checkbox-heart input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+
+.ceres-sheet .checkbox-heart {
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px 4px;
+    user-select: none;
+}
+
+
+    .ceres-sheet .checkbox-heart span::before {
+        font-family: "Font Awesome 6 Free", "Font Awesome 5 Free", "FontAwesome";
+        font-weight: 400; 
+        font-style: normal;
+        content: "\f004"; 
+        font-size: 18px;
+        color: #888888; 
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+
+    .ceres-sheet .checkbox-heart input[type="checkbox"]:checked + span::before {
+        font-weight: 900; 
+        color: #d9534f; 
+    }
+
+.profile-img-container {
+    width: 80px !important;
+    margin-right: 15px !important;
+    height: 80px !important;
+}
+
+
+.profile-img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important; 
+    background: #000000 !important;
+    border: 2px solid #bfa071 !important; 
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease, border-color 0.2s ease !important;
+}
+
+
+    .profile-img:hover {
+        border-color: #ffffff !important;
+        transform: scale(1.05); 
+    }
+.ceres-sheet .attribute-headers {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    gap: 30px;
+}
+
+
+    .ceres-sheet .attribute-headers h2 {
+        flex: 1;
+        margin: 0;
+        font-size: 18px;
+    }
+
+
+.ceres-sheet .col-head {
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    flex: none;
+}
+
+
+
+
+.ceres-sheet .attribute-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+
+.ceres-sheet .attribute-row {
+    display: flex;
+    align-items: center;
+    width: 450px !important;
+    max-width: 450px !important;
+    flex: 0 0 450px !important; 
+    gap: 30px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+}
+
+
+.ceres-sheet .header-row h2.attr-name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+
+.ceres-sheet .short-input {
+    width: 70px !important;
+    min-width: 70px !important;
+    max-width: 70px !important;
+    text-align: center;
+    flex: none !important;
+    box-sizing: border-box;
+}
+
+.ceres-sheet .col-head {
+    font-weight: bold;
+    font-size: 11px;
+    display: inline-block;
+}
+
+
+.ceres-sheet .btn-rest {
+    width: auto !important;
+    height: auto !important;
+    flex: none !important;
+    line-height: normal !important;
+    padding: 4px 10px !important;
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: auto;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+    .ceres-sheet .btn-rest:hover {
+        background: #ffffff;
+        color: #000000;
+    }
+.chat-message {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+    .chat-message .dice-roll .dice-formula,
+    .chat-message .dice-roll .dice-total {
+        background: #111111;
+        color: #ffffff;
+        border: 1px solid #444444;
+    }
+
+
+    .chat-message .dice-tooltip .dice-rolls .roll {
+        color: #ffffff;
+    }
+.white-text-roll {
+    color: #ffffff;
+    font-family: "Courier New";
+    font-size: 15px;
+    justify-content: center;
+}
+.inventory-title {
+    background-color: black;
+}
+    .inventory-title .item-create {
+        color: white !important;
+    }
+.repair {
+    background-color: black;
+    max-width: 30%;
+    margin-left: auto;
+    text-align: right;
+}
+    .repair .btn-repair-items {
+        color: white !important;
+        
+    }
+#item-name::placeholder {
+    color: white;
+    opacity: 0.7; 
+}
+.ceres-dialog,
+.ceres-dialog .window-header,
+.ceres-dialog .window-content {
+    background: #111111 !important;
+    color: #ffffff !important;
+    border-color: #333333 !important;
+}
+
+
+    .ceres-dialog .window-header .window-title,
+    .ceres-dialog .window-header .close {
+        color: #ffffff !important;
+    }
+
+ 
+    .ceres-dialog input[type="text"],
+    .ceres-dialog select {
+        background-color: #222222 !important;
+        color: #ffffff !important;
+        border: 1px solid #444444 !important;
+    }
+
+
+      .ceres-dialog input[type="text"]::placeholder {
+            color: #bbbbbb !important;
+        }
+
+    .ceres-dialog .dialog-buttons button {
+        background: #222222 !important;
+        color: #ffffff !important;
+        border: 1px solid #444444 !important;
+    }
+.ceres-sheet .btn-repair-items {
+    width: auto !important;
+    height: auto !important;
+    flex: none !important;
+    line-height: normal !important;
+    padding: 4px 10px !important;
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: auto;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.ceres-sheet .btn-ship-rest {
+    width: auto !important;
+    height: auto !important;
+    flex: none !important;
+    line-height: normal !important;
+    padding: 4px 10px !important;
+    font-family: 'Courier Prime', monospace;
+    font-size: 11px;
+    font-weight: bold;
+    background: #111;
+    color: #fff;
+    border: 1px solid #111;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: auto;
+    white-space: nowrap;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.checkbox-label {
+    display: inline-flex;
+    align-items: center; 
+    gap: 4px; 
+    cursor: pointer; 
+}
+
+    .checkbox-label input[type="checkbox"] {
+        margin: 0; 
+    }
+
+    .checkbox-label b {
+        line-height: 1; 
+    }
+.chat-message .message-header .message-timestamp {
+    color: #ffffff;
+    opacity: 0.8; 
+}
+#chat-log .chat-message .message-header .message-sender {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+.checkbox-shield input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-shield span {
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0 2px;
+}
+
+    .checkbox-shield span::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400; 
+        content: "\f132"; 
+        color: #888;
+    }
+
+
+.checkbox-shield input[type="checkbox"]:checked + span::before {
+    font-weight: 900; 
+    content: "\f132";
+    color: #00bfff; 
+}
+.chat-message .message-header .message-sender,
+.chat-message .message-header .sender,
+.chat-message .message-header h4 {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+}
+
+.chat-message .ceres-chat-card,
+.chat-message .ceres-chat-card h3 {
+    color: #ffffff !important;
+}
