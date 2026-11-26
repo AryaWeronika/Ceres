@@ -1,0 +1,95 @@
+{
+  "Actor": {
+    "types": [ "character", "narrator" ],
+    "character": {
+      "dane": {
+        "imie": "",
+        "ksywa": "",
+        "nazwisko": "",
+        "przeszlosc": "",
+        "slabosc": "",
+        "wyglad": ""
+      },
+      "atrybuty": {
+        "krzepa": {
+          "max": "k6",
+          "val": "k6"
+        },
+        "zrecznosc": {
+          "max": "k6",
+          "val": "k6"
+        },
+        "spryt": {
+          "max": "k6",
+          "val": "k6"
+        },
+        "intelekt": {
+          "max": "k6",
+          "val": "k6"
+        },
+        "osobowosc": {
+          "max": "k6",
+          "val": "k6"
+        }
+      },
+      "statystyki": {
+        "przeszukanie": "k12",
+        "pustka": "k4",
+        "pd": 0,
+        "zdrowie": {
+          "z1": true,
+          "z2": true,
+          "z3": true,
+          "z4": true,
+          "z5": false,
+          "z6": false
+        },
+        "pancerz": 0
+      },
+      "ekwipunek": "",
+      "drobiazgi": "",
+      "statek": {
+        "nazwa": "",
+        "rodzaj": "",
+        "miejsca": "",
+        "kadlub": {
+          "value": 10,
+          "max": 10
+        },
+        "ability": {
+          "description": "",
+          "cost": 0
+        },
+        "wyglad": "",
+        "cargo": "",
+        "systemy": {
+          "uzbrojenie": {
+            "max": "k6",
+            "val": "k6"
+          },
+          "naped": {
+            "max": "k6",
+            "val": "k6"
+          },
+          "skanery": {
+            "max": "k6",
+            "val": "k6"
+          }
+        }
+      }
+    }
+  },
+  "narrator": {
+    "campaign": "",
+    "opponents": [],
+    "challenges": [],
+    "gmNotes": ""
+  },
+  "Item": {
+    "types": [ "item", "ability" ],
+    "item": {
+      "dice": "k6",
+      "isDurable": true
+    }
+  }
+}

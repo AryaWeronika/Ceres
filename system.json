@@ -1,0 +1,51 @@
+{
+  "id": "Ceres",
+  "title": "Ceres",
+  "description": "Polski system o kosmicznych kowboyach w uniwersum Kalibana (sci-fi), wydany przez wydawnictwo Hengal.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "14",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "AryaWeronika",
+      "flags": {}
+    }
+  ],
+  "background": "systems/Ceres/assets/tlo-systemu.png",
+  "esmodules": [
+    "module/main.js"
+  ],
+  "styles": [
+    "css/ceres.css",
+    "css/pause.css",
+    "css/gm.css"
+  ],
+  "languages": [
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "narrator": {}
+    },
+    "Item": {
+      "item": {},
+      "ability": {}
+    },
+    "url": "https://github.com/AryaWeronika/Ceres",
+    "manifest": "https://raw.githubusercontent.com/AryaWeronika/Ceres/main/system.json",
+    "download": "https://github.com/AryaWeronika/Ceres/archive/refs/heads/main.zip"
+  }
+}
