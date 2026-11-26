@@ -43,9 +43,9 @@
     "Item": {
       "item": {},
       "ability": {}
-    },
-    "url": "https://github.com/AryaWeronika/Ceres",
-    "manifest": "https://raw.githubusercontent.com/AryaWeronika/Ceres/main/system.json",
-    "download": "https://github.com/AryaWeronika/Ceres/archive/refs/heads/main.zip"
-  }
+    }
+  },
+  "url": "https://github.com/AryaWeronika/Ceres",
+  "manifest": "https://raw.githubusercontent.com/AryaWeronika/Ceres/main/system.json",
+  "download": "https://github.com/AryaWeronika/Ceres/archive/refs/heads/main.zip"
 }
