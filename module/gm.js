@@ -10,7 +10,7 @@ export class CeresGMSheet extends BaseActorSheet {
     static get defaultOptions() {
         return mergeObj(super.defaultOptions, {
             classes: ["ceres-sheet", "sheet", "actor", "ceres-gm-sheet"],
-            template: "systems/Ceres/templates/gm.hbs",
+            template: "systems/ceres/templates/gm.hbs",
             width: 720,
             height: 850,
             tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "opponents" }]
