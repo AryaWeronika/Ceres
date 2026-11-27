@@ -13,7 +13,7 @@ export class CeresActorSheet extends BaseActorSheet {
     static get defaultOptions() {
         return mergeObj(super.defaultOptions, {
             classes: ["ceres-sheet", "sheet", "actor"],
-            template: "systems/ceres/templates/character.hbs",
+            template: "systems/Ceres/templates/character.hbs",
             width: 700,
             height: 700
         });
