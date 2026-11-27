@@ -127,8 +127,17 @@ Hooks.on("renderActorSheet", (app, html) => {
         }
 
         await actor.update(updateData);
-        ui.notifications.info(`${actor.name} łapie oddech! Atrybuty zostały odnowione.`);
+        await ChatMessage.create({
+            speaker: ChatMessage.getSpeaker({ actor: actor }),
+            content: `
+            <div class="ceres-chat-card">
+                <h3 style="margin: 0 0 5px 0; border-bottom: 1px solid #7a7971;color:white;"><b>Złap oddech</b></h3>
+                <div>Postać <b>${actor.name}</b> łapie oddech! Wszystkie atrybuty zostały odnowione do wartości maksymalnych.</div>
+            </div>
+        `
+        });
     });
+
 
     // --- Naprawa statku ---
     root.find('.btn-ship-rest').click(async (event) => {
@@ -167,7 +176,6 @@ Hooks.on("renderActorSheet", (app, html) => {
         const durableItems = actor.items.filter(i => i.system?.isDurable);
 
         if (durableItems.length === 0) {
-            ui.notifications.warn("Brak trwałych przedmiotów do naprawy.");
             return;
         }
 
@@ -183,7 +191,7 @@ Hooks.on("renderActorSheet", (app, html) => {
             content: `
                 <div class="ceres-chat-card">
                     <h3 style="margin: 0 0 5px 0; border-bottom: 1px solid #7a7971;color:white;"><b>Naprawa Ekwipunku</b></h3>
-                    <div>Postać <b>${actor.name}</b> naprawia swoje trwałe przedmioty (T)! Wróciły do wartości maksymalnych.</div>
+                    <div>Postać <b>${actor.name}</b> naprawia swoje trwałe przedmioty (T)!</div>
                 </div>
             `
         });
