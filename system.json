@@ -1,5 +1,5 @@
 {
-  "id": "ceres",
+  "id": "Ceres",
   "title": "Ceres",
   "description": "Polski system o kosmicznych kowboyach w uniwersum Kalibana (sci-fi), wydany przez wydawnictwo Hengal.",
   "version": "1.0.0",
@@ -14,7 +14,7 @@
       "flags": {}
     }
   ],
-  "background": "../assets/tlo-systemu.png",
+  "background": "systems/Ceres/assets/tlo-systemu.png",
   "esmodules": [
     "module/main.js"
   ],
