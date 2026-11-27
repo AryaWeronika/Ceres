@@ -14,7 +14,7 @@
       "flags": {}
     }
   ],
-  "background": "systems/Ceres/assets/tlo-systemu.png",
+  "background": "../assets/tlo-systemu.png",
   "esmodules": [
     "module/main.js"
   ],
